@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel = "stylesheet" href = "style.css">
+    <script src="https://kit.fontawesome.com/bfcf0721d3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#academic_projects">Academic Projects</a></li>
+                    <li><a href="#contact">Contact </a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+
+            </nav>
+            <div class="header-text">
+                <h3 style="color: #080808; margin-right: auto; ">Hi, I am Shruthi</h3>
+                <p style="color: #080808; font-size: x-large;">-Salesforce Admin</p>
+            </div>
+            </div>
+        </div>
+    <!---------about------------->
+    <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/sfa.jfif" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 style="color: #080808;">About Me</h1>
+                <p style="color: #080808;">Salesforce Administrator with 2+ years experience configuring Salesforce Sales, Service and Marketing Cloud. Proven ability to analyze, design and optimize business processes with hands on experience implementing change, increasing user adaption, and driving best practice.</p>
+                     <div class="tab-titles">
+                        <p style="color: #080808;" class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p style="color: #080808;"class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                        <p style="color: #080808;"class="tab-links active-link" onclick="opentab('education')">Education</p>
+                     </div>
+                     <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span style="color: #080808;font-size: large;">Salesforce Admin</span><br>Reports and Dashboards, Custom and standard objects, Flows, Process builder, Workflows,
+                                Approval process, campaigns, campaign members, Record types, Validation Rules, Users,
+                                Profiles, Role hierarchy, List view, Record types, custom lightning pages, Email templates,
+                                Lightning Components, Classes/Controllers, Apex, Triggers</li>
+                            <li><span style="color: #080808; font-size: large;">Salesforce Tools</span><br>Force.com Platform (Sandbox, and Production), Apex Data Loader, Workbench, Dataloader.io,
+                                Import wizard, Salesforce for Outlook, Tableau, Change Sets, Salesforce Chatter</li>
+                            <li><span style="color: #080808;font-size: large;">Methodologies</span><br>Agile, Scrum, Waterfall module </li>
+                            <li><span style="color: #080808;font-size: large;">CRM Tools</span><br>Salesforce.com, Sales Cloud, Service Cloud, Chatter, Communities, Service Console</li>
+                            
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span style="color: #080808;">08/2021-12/2022</span><br>Grading Assistant at Northwest Missouri State University</li>
+                            <li><span style="color: #080808;">07/2019-07/2021</span><br>Salesforce Administrator at Deloitte Support Services India Private Limited</li>
+                            
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span style="color: #080808;">2016-2020</span><br>Bachelor of Computer Science at Jawaharlal Nehru Technological University</li>
+                            <li><span style="color: #080808;">2021-2022</span><br>Master of Science at Northwest Missouri State University</li>
+                            
+                        </ul>
+                     </div>
+                    <div id="portfolio">
+                        <div class="container">
+                            <p style="color: #080808; "class="sub-title; font-size: medium;">Academic Projects</p>
+                            <li><span style="color: #080808;"> Heart Disease Prediction</span><br>Heart disease prediction is to predict the presence of heart disease based on few features and the main aim is to let the
+                                user know if they are suffering with it or not</li>
+                                <li><span style="color: #080808;"> Smart Attendance Management System</span><br>Developed an android application to automate the traditional way of recording attendance and provide an innovative and
+                                    efficient way to visualize attendance. A better way to store and retrieve attendance records</li>
+                        </div>
+                    </div>
+                    <div id="contact">
+                        <div class="container">
+                            <div class ="row">
+                                <div class="contact-left">
+                                <p style="color: #080808;"class="sub-title; font-size: medium;">Contact Me</p>
+                                <p style=" font-size: large;" ><i class="fa-solid fa-paper-plane"></i> patkurshruthi@gmail.com</p>
+                                <p><i class="fa-solid fa-phone"></i>281603877</p>                                
+
+                                v fd f /div>  
+                            <div class="contact-right">
+                                <form>
+                                    <input  style="color: black;" type="text" name="Name" placeholder="Your Name" required>
+                                    <input style="color: black;"type="email" name="email" placeholder="Your Email" required>
+                                    <textarea style="color: black;"name="Message" rows="5" placeholder="Your Message"></textarea>
+                                    <button  style="color: black;" type="submit" class="btn btn2">Submit</button>
+                                </form> 
+                            </div>
+
+                            <div class = "row">
+                             <a href ="images/ShruthiSalesforce.pdf" download class="btn btn2">Download Resume</a>
+                            </div>
+                            <div class = "row">
+                                <a href ="images/CL.docx" download class="btn btn2">Download Cover Letter</a>
+                               </div>
+                            
+                            
+                    </div>
+                    </div>
+                     <script>
+                        var tablinks = document.getElementsByClassName("tab-links");
+                        var tabcontents = document.getElementsByClassName("tab-contents");
+                        function opentab(tabname){
+                        for(tablink of tablinks){
+                            tablink.classList.remove("active-link");
+                        }
+                        for(tabcontent of tabcontents){
+                            tabcontent.classList.remove("active-tab");
+                        }
+                        event.currentTarget.classList.add("active-link");
+                        document.getElementById(tabname).classList.add("active-tab");
+                    }
+                     </script>
+                     <script>
+                        var sidemenu = document.getElementById("sidemenu");
+                        function openmenu(){
+                            sidemenu.style.right = "0";
+                        }
+                        function closemenu(){
+                            sidemenu.style.right = "-200px";
+                        }
+                     </script>
+
+                
+            </div> 
+        </div>
+    </div>
+
+    </div>
+    
+</body>
+</html>
